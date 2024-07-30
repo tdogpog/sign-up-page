@@ -1,2 +1,2 @@
 # sign-up-page
-example sign-up page from the odin project
+example sign-up page coded by me via odin project curriculum 
