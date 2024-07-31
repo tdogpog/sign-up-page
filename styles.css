@@ -2,6 +2,14 @@ body {
     margin: 0;   /* Remove body margins */
     height: 100%;
     overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@font-face {
+    font-family: 'odinFont';
+    src: url(./Norse-Bold.otf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 .page-flex-container{
@@ -11,7 +19,7 @@ body {
 
 .pic-background{
     flex: 0 0 35%;
-
+    position: relative;
 }
 
 .resize{
@@ -25,18 +33,33 @@ body {
     flex-direction: column;
     align-items: center;
     background: #f5f5f5;
+    justify-content: center;
+}
+
+.login-header{
+    width: 100%;
+    padding-bottom: 50px;
 }
 
 .header{
     font-size: 16px;
+    
 }
 
 .header,#login-header{
     padding-left: 20px;
+    
+}
+
+.header,h2{
+    padding-top: 20px;
 }
 
 .login-main{
-    width:100%
+    width:100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    background-color: white;
+
 }
 
 
@@ -53,4 +76,45 @@ form{
     gap: 10px;
     padding-bottom: 30px;
     width: 30%;    
+}
+
+input{
+    border: solid #E5E7EB 3px;
+}
+
+.create-account{
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+button{
+    margin-bottom: 35px;
+    background: #596D48;
+    color: white;
+    border-radius: 8px;
+    height: 50px;
+    width: 200px;
+    font-size: 18px;
+}
+
+.odin-opaque{
+    position: absolute;
+    top: 20%;
+    display: flex;
+    height: 200px;
+    background: black;
+    opacity: 60%;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#logo-text{
+    font-family: 'odinFont',sans-serif,'Times New Roman', Times, serif;
+    color: white;
+    font-size: 100px;
+    align-self: center;
+
 }
